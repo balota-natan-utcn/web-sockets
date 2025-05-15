@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Listing</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ShopSmart</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="filters">
+            <div class="filter-group">
+                <select id="categoryFilter">
+                    <option value="">All Consoles</option>
+                    <option value="NES">NES</option>
+                    <option value="Nintendo 64">Nintendo 64</option>
+                    <option value="Playstation 1">Playstation 1</option>
+                    <option value="SNES">SNES</option>
+                </select>
+                <select id="sortBy">
+                    <option value="price_asc">Price: Low to High</option>
+                    <option value="price_desc">Price: High to Low</option>
+                    <option value="name_asc">Name: A-Z</option>
+                    <option value="name_desc">Name: Z-A</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <input type="text" id="searchInput" placeholder="Search products...">
+            </div>
+        </div>
+        
+        <div id="productGrid" class="product-grid">
+            <!-- Products will be loaded here -->
+        </div>
+        
+        <div id="loading" class="loading">Loading products...</div>
+        
+        <div id="pagination" class="pagination">
+            <!-- Pagination buttons will be added here -->
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
